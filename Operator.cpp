@@ -4,7 +4,7 @@ using namespace std;
 class Demo
 {
     public:
-        int No1,No2;
+        int No1, No2;
 
         Demo(int A, int B)
         {
@@ -16,6 +16,8 @@ class Demo
 Demo operator +(Demo op1, Demo op2)
 {
     return Demo(op1.No1+op2.No1, op1.No2+op2.No2);
+    // return Demo(10+30, 20+40);
+    // return Demo(40,60);
 }
 
 int main()
@@ -24,8 +26,8 @@ int main()
     Demo obj2(30,40);
 
     Demo obj3(0,0);
-    obj3 = obj1 + obj2;
-
+    obj3 = obj1 + obj2;     // +(obj1,obj2);
+    
     cout<<obj3.No1<<"\t"<<obj3.No2<<"\n";
 
     return 0;

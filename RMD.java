@@ -16,33 +16,32 @@ class Base
 class Derived extends Base
 {
     public int X,Y;
-
     public void Fun()
-    {   System.out.println("Inside Derived Fun");   }  
+    {   System.out.println("Inside Derived Fun");   }
     public void Sun()
-    {   System.out.println("Inside Derived Sun");   } 
+    {   System.out.println("Inside Derived Sun");   }
     public void Mun()
-    {   System.out.println("Inside Derived Mun");   }  
+    {   System.out.println("Inside Derived Mun");   }
     public void Bun()
-    {   System.out.println("Inside Derived Bun");   }   
+    {   System.out.println("Inside Derived Bun");   }
 }
 
 class RMD
 {
     public static void main(String A[])
     {
-        Base bobj = new Derived();
-        bobj.Fun();
-        bobj.Gun();
-        bobj.Sun();
-        bobj.Run();
-      //bobj.Mun();
-      //bobj.Bun();
+        Base bobj = new Derived();  // Upcasting
 
+        bobj.Fun();     // Dervied Fun
+        bobj.Gun();     // Base Gun
+        bobj.Sun();     // Derived Sun
+        bobj.Run();     // Base Run
+        // bobj.Mun();     // Error
+        // bobj.Bun();     // Error
     }
 }
 
-// Base bobj = new Base()         No Casting
-// Derived dobj = new Derived()   No Casting
-// Base bobj = new Derived()      Upcasting
-// Derived dobj = new Base()      Downcasting (Not Allowed)
+// Base bobj = new Base()           No casting
+// Derived dobj = new Derived()     No casting
+// Base bobj = new Derived();       Upcasting
+// Derived dobj = new Base()        Downcasiting    (Not allowed)

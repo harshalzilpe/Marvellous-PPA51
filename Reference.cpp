@@ -6,11 +6,11 @@ int main()
     int no = 11;
     int &X = no;
 
-    cout<<no<<"\n";
-    cout<<X<<"\n";
+    cout<<no<<"\n";     // 11
+    cout<<X<<"\n";      // 11
 
-    cout<<&no<<"\n";
-    cout<<&X<<"\n";
-
+    cout<<&no<<"\n";    // 100
+    cout<<&X<<"\n";     // 100
+    
     return 0;
 }

@@ -4,7 +4,7 @@ using namespace std;
 class Base
 {
     public:
-        void Fun()      //Defination
+        void Fun()                      // Defination
         {
             cout<<"Inside Base Fun\n";
         }
@@ -13,7 +13,7 @@ class Base
 class Derived : public Base
 {
     public:
-        void Fun()      //Redefination
+        void Fun()                      // Redefination
         {
             cout<<"Inside Derived Fun\n";
         }
@@ -21,7 +21,7 @@ class Derived : public Base
 
 int main()
 {
-    cout<<sizeof(Base)<<"\n";   //1
+    cout<<sizeof(Base)<<"\n";       // 1 byte
     Base bobj;
     bobj.Fun();
 
